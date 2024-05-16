@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">SmartStackBills</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="doorbell">Doorbell</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="ic_menu">Menu</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="default_web_client_id">335330685775-ngqfr5vqupj0smekoc1uvdjq5vmibkud.apps.googleusercontent.com</string>
+    <string name="or">or</string>
+    <string name="choose_category">Choose a category</string>
+    <string name="choose_vendor">Choose a vendor</string>
+    <string name="choose_recurrence">Choose recurrence</string>
+    <string name="choose_paid_status">Paid status</string>
+
+    <!-- New hints for text fields -->
+    <string name="hint_title">Type</string>
+    <string name="hint_amount">Type</string>
+    <string name="hint_purchase_date">Choose</string>
+    <string name="hint_reminder_date">Choose</string>
+    <string name="hint_comments">Type</string>
+
+    <string-array name="category_options">
+        <item>Choose</item> <!-- Default first item -->
+        <item>Accommodation</item>
+        <item>Communication</item>
+        <item>Insurance</item>
+        <item>Subscriptions and Memberships</item>
+        <item>Transportation</item>
+        <item>Finance/Fees</item>
+        <item>Taxes</item>
+        <item>Health</item>
+        <item>Education</item>
+        <item>Shopping and Consumption</item>
+    </string-array>
+    <string-array name="vendor_options">
+        <item>Choose</item>
+        <item>Amazon</item>
+        <item>Aldi</item>
+        <item>Edeka</item>
+        <item>Netto</item>
+        <item>MediaMarkt</item>
+        <item>Saturn</item>
+        <item>Penny</item>
+        <item>REWE</item>
+        <item>etc</item>
+    </string-array>
+
+    <string-array name="recurrence_options">
+        <item>Choose</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>Custom</item>
+    </string-array>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ReceiptsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_background">
+
+        <!-- Field 1: Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:maxLength="30"
+            android:inputType="textCapWords"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 2: Category -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="Choose"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 3: Vendor -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vendor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/vendorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="Choose"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 4: Amount -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/amountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 5: Purchase Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/purchaseDateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose"
+            android:focusable="false"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 6: Recurrence -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recurrence"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/recurrenceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="Choose"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 7: Reminder -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/reminderField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose"
+            android:focusable="false"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 8: Paid -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <CheckBox
+            android:id="@+id/paidCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 9: Add Image -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/addImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add/Upload"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 10: Comments -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/commentsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:maxLength="30"
+            android:inputType="textCapSentences"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Buttons for actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@drawable/rounded_button_background"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/orange_button_background"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
