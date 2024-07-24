@@ -15,9 +15,49 @@
     <string name="default_web_client_id">335330685775-ngqfr5vqupj0smekoc1uvdjq5vmibkud.apps.googleusercontent.com</string>
     <string name="or">or</string>
     <string name="choose_category">Choose a category</string>
+    <string name="choose_subcategory">Choose a subcategory</string>
     <string name="choose_vendor">Choose a vendor</string>
     <string name="choose_recurrence">Choose recurrence</string>
     <string name="choose_paid_status">Paid status</string>
+    <string name="account">Account</string>
+
+    <!-- Income Activity Strings -->
+    <string name="income_title">Title</string>
+    <string name="income_hint_title">Enter Title</string>
+    <string name="income_category">Category</string>
+    <string name="income_subcategory">Subcategory</string>
+    <string name="income_amount">Amount</string>
+    <string name="income_hint_amount">Enter Amount</string>
+    <string name="income_date_received">Date Received</string>
+    <string name="income_hint_date_received">Enter Date</string>
+    <string name="income_frequency">Frequency</string>
+    <string name="income_comments">Comments</string>
+    <string name="income_hint_comments">Enter Comments</string>
+    <string name="income_create_button">Create</string>
+    <string name="income_cancel_button">Cancel</string>
+    <string name="income_currency">EUR</string>
+    <string name="choose_frequency">Choose Frequency</string>
+
+    <!-- Spendings Activity Strings -->
+    <string name="spending_title">Title</string>
+    <string name="spending_hint_title">Enter Title</string>
+    <string name="spending_category">Category</string>
+    <string name="spending_subcategory">Subcategory</string>
+    <string name="spending_amount">Amount</string>
+    <string name="spending_hint_amount">Enter Amount</string>
+    <string name="spending_date">Date</string>
+    <string name="spending_hint_date">Enter Date</string>
+    <string name="spending_comments">Comments</string>
+    <string name="spending_hint_comments">Enter Comments</string>
+    <string name="spending_create_button">Create</string>
+    <string name="spending_cancel_button">Cancel</string>
+    <string name="add_category_button">Add Category</string>
+    <string name="spending_saved_successfully">Spending saved successfully</string>
+    <string name="failed_to_save_spending">Failed to save spending</string>
+    <string name="total_amount_mismatch">Total amount does not match the sum of sub amounts</string>
+    <string name="fill_all_required_fields">Please fill all required fields</string>
+    <string name="fill_all_amount_fields">Please fill all amount fields</string>
+    <string name="valid_amount_range">Please enter a valid amount between 0 and 1,000,000</string>
 
     <!-- New hints for text fields -->
     <string name="hint_title">Type</string>
@@ -26,8 +66,88 @@
     <string name="hint_reminder_date">Choose</string>
     <string name="hint_comments">Type</string>
 
+    <!-- Income Categories and Subcategories -->
+    <string-array name="income_category_options">
+        <item>Salary</item>
+        <item>Self-Employment/Freelance Work</item>
+        <item>Rental and Lease Income</item>
+        <item>Investment Income</item>
+        <item>Business Income</item>
+        <item>Retirement and Pensions</item>
+        <item>Social Benefits</item>
+        <item>Scholarships and Grants</item>
+        <item>Royalties and Copyrights</item>
+        <item>Other Income</item>
+    </string-array>
+
+    <string-array name="salary_subcategories">
+        <item>Regular salary (from employment)</item>
+        <item>Overtime pay</item>
+        <item>Bonuses or incentives</item>
+    </string-array>
+
+    <string-array name="self_employment_freelance_work_subcategories">
+        <item>Fees for service</item>
+        <item>Project-based income</item>
+    </string-array>
+
+    <string-array name="rental_lease_income_subcategories">
+        <item>Real estate</item>
+        <item>Vehicles</item>
+        <item>Equipment</item>
+    </string-array>
+
+    <string-array name="investment_income_subcategories">
+        <item>Dividends</item>
+        <item>Interest earnings (savings accounts, fixed deposits, etc.)</item>
+        <item>Capital gains (stocks, mutual funds)</item>
+    </string-array>
+
+    <string-array name="business_income_subcategories">
+        <item>Profit shares</item>
+        <item>Executive salary</item>
+    </string-array>
+
+    <string-array name="retirement_pensions_subcategories">
+        <item>State pension</item>
+        <item>Company pension plans</item>
+        <item>Private pension insurance</item>
+    </string-array>
+
+    <string-array name="social_benefits_subcategories">
+        <item>Unemployment benefits</item>
+        <item>Sickness benefits</item>
+        <item>Parental benefits</item>
+    </string-array>
+
+    <string-array name="scholarships_grants_subcategories">
+        <item>Educational scholarships</item>
+        <item>Research grants</item>
+    </string-array>
+
+    <string-array name="royalties_copyrights_subcategories">
+        <item>Patents</item>
+        <item>Software licenses</item>
+        <item>Book publications</item>
+    </string-array>
+
+    <string-array name="other_income_subcategories">
+        <item>Benefits in kind (e.g., company car)</item>
+        <item>Inheritances and gifts</item>
+        <item>Crowdfunding/Crowdinvesting returns</item>
+    </string-array>
+
+    <string-array name="frequency_options">
+        <item>One-time</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Yearly</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Spendings Categories and Subcategories -->
     <string-array name="category_options">
-        <item>Choose</item> <!-- Default first item -->
+        <item>Choose</item>
         <item>Accommodation</item>
         <item>Communication</item>
         <item>Insurance</item>
@@ -39,6 +159,59 @@
         <item>Education</item>
         <item>Shopping and Consumption</item>
     </string-array>
+
+    <string-array name="accommodation_subcategories">
+        <item>Rent/Mortgage</item>
+        <item>Utilities (electricity, water, gas)</item>
+        <item>Household services</item>
+    </string-array>
+
+    <string-array name="communication_subcategories">
+        <item>Smartphone</item>
+        <item>Internet</item>
+    </string-array>
+
+    <string-array name="insurance_subcategories">
+        <item>Car insurance</item>
+        <item>Health insurance</item>
+        <item>Household insurance</item>
+        <item>Life insurance</item>
+    </string-array>
+
+    <string-array name="subscriptions_memberships_subcategories">
+        <item>Streaming Services</item>
+        <item>Gym Membership</item>
+        <item>Clubs or Organizations</item>
+    </string-array>
+
+    <string-array name="transportation_subcategories">
+        <item>Car expenses (fuel, maintenance)</item>
+        <item>Public transport</item>
+        <item>Parking fees</item>
+    </string-array>
+
+    <string-array name="finances_fees_subcategories">
+        <item>Loan payments</item>
+        <item>Credit card fees</item>
+        <item>Banking fees</item>
+    </string-array>
+
+    <string-array name="health_subcategories">
+        <item>Medication</item>
+        <item>Doctor bill</item>
+    </string-array>
+
+    <string-array name="education_subcategories">
+        <item>Tuition fees</item>
+        <item>Books and supplies</item>
+    </string-array>
+
+    <string-array name="shopping_consumption_subcategories">
+        <item>Groceries</item>
+        <item>Clothing</item>
+        <item>Electronics</item>
+    </string-array>
+
     <string-array name="vendor_options">
         <item>Choose</item>
         <item>Amazon</item>
@@ -58,5 +231,14 @@
         <item>Monthly</item>
         <item>Yearly</item>
         <item>Custom</item>
+    </string-array>
+    <string-array name="reminder_days_array">
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>5 days</item>
+        <item>6 days</item>
+        <item>7 days</item>
     </string-array>
 </resources>

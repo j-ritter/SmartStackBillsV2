@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.smartstackbills.Spendings">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_background">
+
+        <!-- Field 1: Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title *"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:tooltipText="This field is mandatory"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/spending_hint_title"
+            android:maxLength="30"
+            android:inputType="textCapWords"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 2: Category -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category *"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:tooltipText="This field is mandatory"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 3: Subcategory -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subcategory"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/subcategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 4: Amount -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/amountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/spending_hint_amount"
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Dynamic Fields Container -->
+        <LinearLayout
+            android:id="@+id/dynamicFieldsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"/>
+
+        <!-- Button to add more categories -->
+        <Button
+            android:id="@+id/addCategoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Category"
+            android:background="@drawable/rounded_button_background"
+            android:padding="8dp"
+            android:layout_gravity="end"/>
+
+        <!-- Field 5: Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/dateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/spending_hint_date"
+            android:focusable="false"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Field 6: Comments -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/commentsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/spending_hint_comments"
+            android:maxLength="100"
+            android:inputType="textCapSentences"
+            android:background="@drawable/rounded_frame_background"
+            android:padding="8dp"/>
+
+        <!-- Buttons for actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@drawable/rounded_button_background"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/orange_button_background"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

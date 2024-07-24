@@ -1,0 +1,75 @@
+<resources>
+    <string-array name="category_array">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+    </string-array>
+    <string-array name="subcategory_array">
+        <item>Subcategory 1</item>
+        <item>Subcategory 2</item>
+        <item>Subcategory 3</item>
+    </string-array>
+    <string-array name="vendor_array">
+        <item>Vendor 1</item>
+        <item>Vendor 2</item>
+        <item>Vendor 3</item>
+    </string-array>
+    <string-array name="recurrence_array">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="income_category_array">
+        <item>Salary</item>
+        <item>Self-Employment/Freelance Work</item>
+        <item>Rental and Lease Income</item>
+        <item>Investment Income</item>
+        <item>Business Income</item>
+        <item>Retirement and Pensions</item>
+        <item>Social Benefits</item>
+        <item>Scholarships and Grants</item>
+        <item>Royalties and Copyrights</item>
+        <item>Other Income</item>
+    </string-array>
+
+    <string-array name="income_subcategory_array">
+        <item>Regular salary</item>
+        <item>Overtime pay</item>
+        <item>Bonuses or incentives</item>
+        <item>Fees for service</item>
+        <item>Project-based income</item>
+        <item>Real estate</item>
+        <item>Vehicles</item>
+        <item>Equipment</item>
+        <item>Dividends</item>
+        <item>Interest earnings</item>
+        <item>Capital gains</item>
+        <item>Profit shares</item>
+        <item>Executive salary</item>
+        <item>State pension</item>
+        <item>Company pension plans</item>
+        <item>Private pension insurance</item>
+        <item>Unemployment benefits</item>
+        <item>Sickness benefits</item>
+        <item>Parental benefits</item>
+        <item>Educational scholarships</item>
+        <item>Research grants</item>
+        <item>Patents</item>
+        <item>Software licenses</item>
+        <item>Book publications</item>
+        <item>Benefits in kind</item>
+        <item>Inheritances and gifts</item>
+        <item>Crowdfunding returns</item>
+    </string-array>
+
+    <string-array name="frequency_array">
+        <item>One-time</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Yearly</item>
+        <item>Other</item>
+    </string-array>
+</resources>

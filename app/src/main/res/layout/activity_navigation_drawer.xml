@@ -5,6 +5,6 @@
     android:id="@+id/main_navigation_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Navigation_Drawer">
+    tools:context="com.example.smartstackbills.Navigation_Drawer">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
